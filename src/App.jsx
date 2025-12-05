@@ -1,6 +1,8 @@
 import { useMemo, useState } from "react";
 import { UNITS, convert, format } from "./lib/temperature";
 import GoogleAd from "./components/GoogleAd";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 
 export default function App() {
@@ -13,10 +15,11 @@ export default function App() {
 
   return (
     <div className="app-container">
-      <header className="app-header">
-        <h1>ThermoSwap</h1>
-        <p>Convert Fahrenheit, Celsius, Kelvin, and Rankine instantly.</p>
-      </header>
+      {/* Header com props */}
+      <Header 
+        title="ThermoSwap" 
+        subtitle="Convert Fahrenheit, Celsius, Kelvin, and Rankine instantly." 
+      />
 
       {/* Bloco de entrada */}
       <section className="block input-block">
@@ -67,9 +70,8 @@ export default function App() {
         <GoogleAd />
       </section>
 
-      <footer className="app-footer">
-        <small>Built for everyday use in the U.S., with scientific precision.</small>
-      </footer>
+      {/* Footer com props */}
+      <Footer text="Built for everyday use in the U.S., with scientific precision." />
     </div>
   );
 }
