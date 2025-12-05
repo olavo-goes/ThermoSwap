@@ -1,0 +1,94 @@
+.app-container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: system-ui, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  color: #0077b6;
+}
+
+.app-header p {
+  color: #555;
+}
+
+.block {
+  margin-bottom: 2rem;
+}
+
+.input-block input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.units-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.units-block select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.result-block h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.result-box {
+  padding: 1rem;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+  background: #f0f8ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.actions-block {
+  text-align: center;
+}
+
+.actions-block button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background: #0077b6;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions-block button:hover {
+  background: #023e8a;
+}
+
+.ads-block {
+  text-align: center;
+}
+
+.app-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #777;
+  font-size: 0.9rem;
+}
